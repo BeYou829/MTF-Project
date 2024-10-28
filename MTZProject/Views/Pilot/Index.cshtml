@@ -1,0 +1,39 @@
+﻿@model InputProcessVM;
+@{
+
+}
+<div class="row">
+    <form action="" method="post">
+        <div class="col-5">
+        <label asp-for="NivelCombustible" class="col-6">Nivel de Combustible</label>
+        <input asp-for="NivelCombustible" type="text" class="form-control" name="NivelCombustible"/>
+
+        <label asp-for="MasaVehiculo" class="col-6">Masa del Vehiculo</label>
+        <input asp-for="MasaVehiculo" type="text" class="form-control" name="MasaVehiculo"/>
+
+        <label asp-for="MasaCarga" class="col-6">Masa de la Carga</label>
+        <input asp-for="MasaCarga" type="text" class="form-control" name="MasaCarga"/>
+
+        <label asp-for="AnguloInclinacion" class="col-6">Angulo de Inclinacion</label>
+        <input asp-for="AnguloInclinacion" type="text" class="form-control" name="AnguloInclinacion"/>
+
+        <label asp-for="DistanciaDesplazamiento" class="col-6">Distancia de Desplazamiento</label>
+        <input asp-for="DistanciaDesplazamiento" type="text" class="form-control" name="DistanciaDesplazamiento"/>
+
+        <label asp-for="TiempoCompletar" class="col-6">Tiempo a completar</label>
+        <input asp-for="TiempoCompletar" type="text" class="form-control" name="TiempoCompletar"/>
+        
+        <label asp-for="MaxRpm" class="col-6">El Maximo RPM del Motor</label>
+        <input asp-for="MaxRpm" type="text" class="form-control" name="MaxRpm"/>
+
+        <label asp-for="MaxPotenciaMotor" class="col-6">Maxima Potencia del Motor</label>
+        <input asp-for="MaxPotenciaMotor" type="text" class="form-control" name="MaxPotenciaMotor" />
+
+        <label asp-for="ConsumoCombustible" class="col-6">Nivel de Combustible</label>
+        <input asp-for="ConsumoCombustible" type="text" class="form-control" name="ConsumoCombustible" />
+        </div>
+        <div class="my-4">
+            <input class="btn btn-primary" type="submit" value="Procesar" />
+        </div>
+    </form>
+</div>
