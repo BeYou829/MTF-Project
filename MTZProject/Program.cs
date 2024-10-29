@@ -1,7 +1,11 @@
+using MTZProject.Interfaces;
+using MTZProject.Logic;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IOperation, Operations>();
 
 var app = builder.Build();
 

@@ -1,6 +1,8 @@
+*{
+    color-scheme: dark;
+}
 html {
     font-size: 14px;
-    color-scheme: dark;
 }
 
 @media (min-width: 768px) {
