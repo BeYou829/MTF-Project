@@ -4,6 +4,7 @@ namespace MTZProject.Models
 {
     public class OutputProcessVM
     {
+        public bool Posible { get; set; }
         public double PesoNetoVehiculo { get; set; }
         public double PesoCarga { get; set; }
         public double PesoTotalVehiculo { get; set; }

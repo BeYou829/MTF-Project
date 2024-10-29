@@ -7,7 +7,7 @@ namespace MTZProject.Controllers
 {
     public class PilotController : Controller
     {
-        private readonly IOperation _operation;
+        private IOperation _operation;
         public PilotController(IOperation operation)
         {
             _operation = operation;
@@ -22,13 +22,13 @@ namespace MTZProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                _operation.Processing(dataModel);
+                OutputProcessVM outputProcess = Operations.Processing(dataModel);
+                return Json(outputProcess);
             }
             else
             {
                 return BadRequest();
             }
-            return View();
         }
     }
 }

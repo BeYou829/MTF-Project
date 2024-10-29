@@ -4,6 +4,9 @@ namespace MTZProject.Interfaces
 {
     public interface IOperation
     {
-        void Processing(InputProcessVM model) { }
+        OutputProcessVM Processing(InputProcessVM model)
+        {
+            return new OutputProcessVM();
+        }
     }
 }
